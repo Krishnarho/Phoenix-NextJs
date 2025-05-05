@@ -1,0 +1,36 @@
+.hero {
+    display: grid;
+    grid-template-areas: "hero";
+
+    > * {
+        grid-area: hero;
+    }
+
+    .slide {
+        animation: animate 3s cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    }
+    /* .slide:nth-child(2) {
+        mask-image: linear-gradient(to top, #000 var(--position), #0000 0),
+            linear-gradient(to bottom, #000 var(--position), #0000 0),
+            linear-gradient(to left, #000 var(--position), #0000 0),
+            linear-gradient(to right, #000 var(--position), #0000 0);
+        mask-size: 50px 50px;
+        mask-position: center;
+        transition: --position 0.75s ease-in-out;
+
+        &:hover {
+            --position: 51%;
+        }
+
+        /* mask-image: radial-gradient(circle, #000 var(--position), #0000 0); 
+    } */
+}
+
+@keyframes animate {
+    0% {
+        transform: translatey(-30%);
+    }
+    100% {
+        transform: translatey(0%);
+    }
+}
