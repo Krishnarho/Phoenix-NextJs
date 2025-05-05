@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./style.css";
-import { relative } from "path";
 
 function Home() {
     return (
