@@ -10,10 +10,9 @@ function Home() {
                         <Image
                             src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="under construction"
-                            width={0}
-                            height={0}
+                            width={1024}
+                            height={400} // For Aspect Ratio guidance
                             priority
-                            sizes="100vw"
                             className="w-full h-auto  max-h-[25rem] object-cover rounded-2xl"
                         />
                     </div>

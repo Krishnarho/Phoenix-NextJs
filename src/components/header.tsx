@@ -66,7 +66,7 @@ const Header = () => {
                     { "h-auto": menuToggle }
                 )}
             >
-                <ul className="grid place-items-center gap-y-3">
+                <ul className="grid place-items-center gap-y-2 mb-2">
                     {navLinks.map((link) => (
                         <li key={link.name}>
                             <Link href={link.path} onClick={handleToggle}>
