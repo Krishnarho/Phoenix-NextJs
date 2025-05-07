@@ -3,22 +3,27 @@ import "./style.css";
 
 function Home() {
     return (
-        <section id="home">
-            <div className="container pt-4">
-                <div className="hero max-w-screen-lg mx-auto transition duration-[0.8s]">
-                    <div className="slide w-full">
+        <>
+            <section id="home-hero" className="py-4">
+                <div className="container max-w-3xl px-2 lg:p-0">
+                    <div className="slide relative w-full max-h-[25rem] aspect-video overflow-hidden hero transition duration-[0.8s]">
                         <Image
                             src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="under construction"
-                            width={1024}
-                            height={400} // For Aspect Ratio guidance
                             priority
-                            className="w-full h-auto  max-h-[25rem] object-cover rounded-2xl"
+                            fill // If fill is not used the add style = {{width:, height:} fixed value as mentioned in Image width and height property }
+                            sizes="(max-width: 1024px) 100vw, 1024px"
+                            // width={1024}
+                            // height={400}
+                            // style={{width:"1024px", height:"400px"}}
+                            className="object-cover rounded-2xl"
                         />
                     </div>
                 </div>
-                <div className="text-center">
-                    <h1 className="font-bold text-[clamp(1.875rem,4vw,5rem)] uppercase text-orange-600 tracking-wide my-0">
+            </section>
+            <section id="home-content" className="border">
+                <div className="container max-w-5xl text-center px-2 lg:p-0 border">
+                    <h1 className="font-bold text-[clamp(1.875rem,4vw,5rem)] uppercase text-orange-600 tracking-wide">
                         Coming soon
                     </h1>
                     <h2 className="text-[clamp(1rem,3vw,1.875rem)]">
@@ -28,8 +33,8 @@ function Home() {
                         +91 9769680485 / sales@phoenixglobal.co.in
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
 

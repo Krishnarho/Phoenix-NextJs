@@ -131,6 +131,9 @@
 
 @layer utilities {
     .container {
-        @apply w-[min(1440px,calc(100%-(2*0.25rem)))] m-[0_auto];
+        @apply w-[min(1280px,calc(100%-(2*0.25rem)))] m-[0_auto];
+    }
+    .flex-center {
+        @apply flex justify-center items-center;
     }
 }
