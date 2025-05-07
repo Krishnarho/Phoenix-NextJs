@@ -5,8 +5,8 @@ function Home() {
     return (
         <>
             <section id="home-hero" className="py-4">
-                <div className="container max-w-3xl px-2 lg:p-0">
-                    <div className="slide relative w-full max-h-[25rem] aspect-video overflow-hidden hero transition duration-[0.8s]">
+                <div className="hero container max-w-3xl px-2 lg:p-0">
+                    <div className="slide relative w-full max-h-[25rem] aspect-video overflow-hidden">
                         <Image
                             src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="under construction"
