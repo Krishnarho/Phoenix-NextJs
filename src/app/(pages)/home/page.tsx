@@ -21,15 +21,15 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section id="home-content" className="border">
-                <div className="container max-w-5xl text-center px-2 lg:p-0 border">
+            <section id="home-content" className="border-y">
+                <div className="container max-w-5xl text-center px-2 lg:p-0 border-x">
                     <h1 className="font-bold text-[clamp(1.875rem,4vw,5rem)] uppercase text-orange-600 tracking-wide">
                         Coming soon
                     </h1>
                     <h2 className="text-[clamp(1rem,3vw,1.875rem)]">
                         For any information, please reach on:
                     </h2>
-                    <p className="italic text-sky-500 font-semibold mb-[0.67em]">
+                    <p className="italic text-sky-500 font-semibold pb-[0.67em]">
                         +91 9769680485 / sales@phoenixglobal.co.in
                     </p>
                 </div>
