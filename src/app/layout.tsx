@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider/theme-provider";
 import Header from "@/components/header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
                         </div>
                     </div>
                 </ThemeProvider>
+                <TailwindIndicator />
             </body>
         </html>
     );
